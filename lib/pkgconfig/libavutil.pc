@@ -1,0 +1,14 @@
+prefix=/home/xj/work/ffmpeg-4.2.2/build_output
+exec_prefix=${prefix}
+libdir=/home/xj/work/ffmpeg-4.2.2/build_output/lib
+includedir=/home/xj/work/ffmpeg-4.2.2/build_output/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.31.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm -lXv -lX11 -lXext
+Cflags: -I${includedir}
